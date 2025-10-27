@@ -1,0 +1,20 @@
+{
+  "$schema": "https://openapi.vercel.sh/microfrontends.json",
+  "applications": {
+    "parent-web": {
+      "development": {
+        "fallback": "parent-web-nu.preview.vercel-support.app"
+      }
+    },
+    "child-vite": {
+      "routing": [
+        {
+          "group": "test-feel-free-to-delete-after-10-30",
+          "paths": [
+            "/child/:path*"
+          ]
+        }
+      ]
+    }
+  }
+}
